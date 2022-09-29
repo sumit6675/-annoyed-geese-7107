@@ -8,6 +8,7 @@ import {
   Image,
   Link,
 } from "@chakra-ui/react";
+import { NavLink } from "react-router-dom";
 import Products from "../Pages/Product";
 import Resources from "../Pages/Resources";
 import Inspiration from "../Pages/Inspiration";
@@ -23,14 +24,18 @@ function Navbar() {
             <Resources />
           </Link>
           <Link><Inspiration/></Link>
+          <NavLink to="/pricing">
           <Link>Pricing</Link>
+          </NavLink>
         </Flex>
         <Spacer />
-        <Image
+      <NavLink to="/">
+      <Image
           src="https://logos-world.net/wp-content/uploads/2021/02/Mailchimp-Logo-2018-present.png"
           width={180}
           alt="logo"
         />
+      </NavLink>
         <Spacer />
         <ButtonGroup gap="2">
           <Select w={130} placeholder="English">
@@ -40,12 +45,16 @@ function Navbar() {
             <option>Deutsch</option>
             <option>Italiano</option>
           </Select>
+          <NavLink to="/login" >
           <Button borderRadius={'full'} variant="outline" colorScheme="teal">
-            Sign Up
+            Login
           </Button>
+          </NavLink>
+          <NavLink to="/signup">
           <Button borderRadius={'full'} bg="#ffe01b"  variant="outline" colorScheme="teal">
             Sign Up
           </Button>
+          </NavLink>
         </ButtonGroup>
       </Flex>
     </div>

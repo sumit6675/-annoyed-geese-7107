@@ -9,6 +9,7 @@ import {
   AspectRatio,
 } from "@chakra-ui/react";
 import React from "react";
+import { NavLink } from "react-router-dom";
 
 function HomeTop() {
   return (
@@ -21,6 +22,7 @@ function HomeTop() {
           Win new customers with the #1 email marketing and automations brand*
           that recommends ways to get more opens, clicks, and sales.
         </Text>
+        <NavLink to="/signup">
         <Button
           borderRadius={"full"}
           size="lg"
@@ -31,6 +33,7 @@ function HomeTop() {
         >
           Sign Up
         </Button>
+        </NavLink>
       </Container>
 
       <Flex mt={12}>
