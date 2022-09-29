@@ -21,6 +21,13 @@ import {
   PhoneIcon,
   ExternalLinkIcon,
 } from "@chakra-ui/icons";
+import GetYourBusinessOnline from "./Product_Page/GetYourBusinessOnline";
+import MarketYourBusiness from "./Product_Page/MarketYourBusiness";
+import AudienceManagement from "./Product_Page/AudienceManagement";
+import CreativeTools from "./Product_Page/CreativeTools";
+import MarketingAutomation from "./Product_Page/MarketingAutomation";
+import InsightsAnalytics from "./Product_Page/Insights&Analytics";
+import WhatRight from "./Product_Page/WhatRight";
 function Products() {
   const { isOpen, onOpen, onClose } = useDisclosure();
   const btnRef = React.useRef();
@@ -52,12 +59,12 @@ function Products() {
                 <Box>WE'LL HELP YOU--</Box>
                 <Box>
                   <Heading as="h1" size={"md"}>
-                    Get Your Business Online <ChevronRightIcon />
+                   <GetYourBusinessOnline/> <ChevronRightIcon />
                   </Heading>
                 </Box>
                 <Box>
                   <Heading as="h1" size={"md"}>
-                    Market Your Busines <ChevronRightIcon />
+                    <MarketYourBusiness/> <ChevronRightIcon />
                   </Heading>
                 </Box>
               </SimpleGrid>
@@ -66,23 +73,23 @@ function Products() {
                 <Box>PLATFORM FEATURES --</Box>
                 <Box>
                   <Heading as="h1" size={"md"}>
-                    Audience Management <ChevronRightIcon />
+                    <AudienceManagement/> <ChevronRightIcon />
                   </Heading>
                 </Box>
                 <Box>
                   <Heading as="h1" size={"md"}>
-                    Creative Tools <ChevronRightIcon />
+                   <CreativeTools/> <ChevronRightIcon />
                   </Heading>
                 </Box>
                 <Box>
                   <Heading as="h1" size={"md"}>
-                    Marketing Automation
+                  <MarketingAutomation/>
                     <ChevronRightIcon />
                   </Heading>
                 </Box>
                 <Box>
                   <Heading as="h1" size={"md"}>
-                    Insights & Analytics <ChevronRightIcon />
+                    <InsightsAnalytics/> <ChevronRightIcon />
                   </Heading>
                 </Box>
               </SimpleGrid>
@@ -91,7 +98,7 @@ function Products() {
                 <Box>NOT SURE WHERE TO START? —</Box>
                 <Box>
                   <Heading as="h1" size={"md"}>
-                    What's Right for Me? <ChevronRightIcon />
+                   <WhatRight/> <ChevronRightIcon />
                   </Heading>
                 </Box>
               </SimpleGrid>

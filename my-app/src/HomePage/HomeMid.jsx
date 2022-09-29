@@ -19,6 +19,7 @@ import {
 } from "@chakra-ui/react";
 import { CheckIcon, CloseIcon } from "@chakra-ui/icons";
 import React from "react";
+import { NavLink } from "react-router-dom";
 
 function HomeMid() {
   return (
@@ -743,6 +744,7 @@ function HomeMid() {
         sending will be paused if contact or email send limit is exceeded. Learn
         more
       </Text>
+      <NavLink to="/pricing">
       <Button
         borderRadius={"full"}
         size="lg"
@@ -753,6 +755,7 @@ function HomeMid() {
       >
         See all plan details
       </Button>
+      </NavLink>
       <Heading fontSize={'5xl'} m={"auto"} mt={155} w={"65%"}>
         Generate up to 4x more orders* with Customer Journey Builder automations
       </Heading>
