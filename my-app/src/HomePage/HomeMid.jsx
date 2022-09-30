@@ -744,7 +744,7 @@ function HomeMid() {
         sending will be paused if contact or email send limit is exceeded. Learn
         more
       </Text>
-      <NavLink to="/pricing">
+      <NavLink id="pricing1"  to="/pricing">
       <Button
         borderRadius={"full"}
         size="lg"

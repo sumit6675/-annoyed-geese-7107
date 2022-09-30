@@ -22,7 +22,7 @@ function HomeTop() {
           Win new customers with the #1 email marketing and automations brand*
           that recommends ways to get more opens, clicks, and sales.
         </Text>
-        <NavLink to="/signup">
+        <NavLink id="signup2" to="/signup">
         <Button
           borderRadius={"full"}
           size="lg"

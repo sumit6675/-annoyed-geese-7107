@@ -1,8 +1,12 @@
-import React from 'react'
-
+import { Button } from '@chakra-ui/react'
+import React, { useContext } from 'react'
+import { AuthContext } from '../Context/AuthContextProvider'
 function Pricing() {
+  const {handleAuth}=useContext(AuthContext)
   return (
-    <div>Pricing</div>
+    <>
+    <Button onClick={handleAuth}>LogOut</Button>
+    </>
   )
 }
 
