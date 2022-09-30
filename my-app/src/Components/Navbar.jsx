@@ -24,12 +24,12 @@ function Navbar() {
             <Resources />
           </Link>
           <Link><Inspiration/></Link>
-          <NavLink to="/pricing">
+          <NavLink id="pricing"  to="/pricing">
           <Link>Pricing</Link>
           </NavLink>
         </Flex>
         <Spacer />
-      <NavLink to="/">
+      <NavLink id="Image"  to="/">
       <Image
           src="https://logos-world.net/wp-content/uploads/2021/02/Mailchimp-Logo-2018-present.png"
           width={180}
@@ -45,12 +45,12 @@ function Navbar() {
             <option>Deutsch</option>
             <option>Italiano</option>
           </Select>
-          <NavLink to="/login" >
+          <NavLink id="login2"  to="/login" >
           <Button borderRadius={'full'} variant="outline" colorScheme="teal">
             Login
           </Button>
           </NavLink>
-          <NavLink to="/signup">
+          <NavLink id="signup"  to="/signup">
           <Button borderRadius={'full'} bg="#ffe01b"  variant="outline" colorScheme="teal">
             Sign Up
           </Button>

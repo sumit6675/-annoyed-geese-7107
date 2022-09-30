@@ -1,4 +1,5 @@
-import React from "react";
+import React, {  useState } from "react";
+import axios from "axios"
 import {
   Flex,
   Heading,
@@ -14,7 +15,37 @@ import {
   Highlight,
 } from "@chakra-ui/react";
 import { NavLink } from "react-router-dom";
+const initState = {
+  email: "",
+  username: "",
+  password: ""
+}
+
+
 function SignUp() {
+  const [state, setState] = useState(initState)
+  const [data,setData]=useState([])
+  const handleChange = e => {
+    const {name, value} = e.target
+    setState( { ...state, [name]: value} )
+  }
+  const HandleSubmit=(e)=>{
+    e.preventDefault()
+    setData(state)
+    axios.post('http://localhost:3002/Users', {
+      email: state.email,
+      username:state.username ,
+      password:state.password ,
+    })
+    .then(function (response) {
+      console.log(response);
+    })
+    .catch(function (error) {
+      console.log(error);
+    });
+    setState(initState)
+  }
+
   return (
     <>
       <Flex>
@@ -27,7 +58,7 @@ function SignUp() {
           <Heading fontSize={"4xl"}>Sign up for Mailchimp</Heading>
           <Flex gap="2" pt="25">
             <Text fontSize={"lg"}>Create an account </Text>
-            <NavLink to={"/login"}>
+            <NavLink id="login" to={"/login"}>
               <Link color={"blue.500"} fontSize={"lg"}>
                 log in
               </Link>
@@ -35,11 +66,11 @@ function SignUp() {
           </Flex>
           <FormControl width={"80%"} m="auto" mb="20">
             <FormLabel mt="5">Email</FormLabel>
-            <Input type="email" placeholder="Email" />
+            <Input  type="email" name="email" value={state.email} placeholder="Email" onChange={handleChange}/>
             <FormLabel mt="5">Username</FormLabel>
-            <Input type="text" placeholder="Username" />
+            <Input type="text" name="username" value={state.username} placeholder="Username" onChange={handleChange}/>
             <FormLabel my="3">Password</FormLabel>
-            <Input mb="5" type="Password" placeholder="Password" />
+            <Input mb="5" type="Password" name="password" value={state.password} placeholder="Password" onChange={handleChange}/>
             <Checkbox mb="5" defaultChecked>
               I don't want to receive emails about Mailchimp and related Intuit
               product and feature updates, marketing best practices, and
@@ -49,8 +80,8 @@ function SignUp() {
               By creating an account, you agree to our Terms and have read and
               acknowledge the Global Privacy Statement.
             </Text>
-            <Button m="auto" my="4" w="80%" colorScheme="blue">
-              LogIn
+            <Button m="auto" my="4" w="80%" colorScheme="blue" onClick={HandleSubmit} >
+              Sign Up
             </Button>
             <Text fontSize={"sm"}>
               Invisible reCAPTCHA by Google Privacy Policy and Terms of Use.
