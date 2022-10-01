@@ -1,5 +1,4 @@
-import React, {  useState } from "react";
-import axios from "axios"
+import React from "react";
 import {
   Flex,
   Heading,
@@ -15,37 +14,9 @@ import {
   Highlight,
 } from "@chakra-ui/react";
 import { NavLink } from "react-router-dom";
-const initState = {
-  email: "",
-  username: "",
-  password: ""
-}
 
 
 function SignUp() {
-  const [state, setState] = useState(initState)
-  const [data,setData]=useState([])
-  const handleChange = e => {
-    const {name, value} = e.target
-    setState( { ...state, [name]: value} )
-  }
-  const HandleSubmit=(e)=>{
-    e.preventDefault()
-    setData(state)
-    axios.post('http://localhost:3002/Users', {
-      email: state.email,
-      username:state.username ,
-      password:state.password ,
-    })
-    .then(function (response) {
-      console.log(response);
-    })
-    .catch(function (error) {
-      console.log(error);
-    });
-    setState(initState)
-  }
-
   return (
     <>
       <Flex>
@@ -66,11 +37,11 @@ function SignUp() {
           </Flex>
           <FormControl width={"80%"} m="auto" mb="20">
             <FormLabel mt="5">Email</FormLabel>
-            <Input  type="email" name="email" value={state.email} placeholder="Email" onChange={handleChange}/>
+            <Input  type="email" name="email"  placeholder="Email" />
             <FormLabel mt="5">Username</FormLabel>
-            <Input type="text" name="username" value={state.username} placeholder="Username" onChange={handleChange}/>
+            <Input type="text" name="username"  placeholder="Username" />
             <FormLabel my="3">Password</FormLabel>
-            <Input mb="5" type="Password" name="password" value={state.password} placeholder="Password" onChange={handleChange}/>
+            <Input mb="5" type="Password" name="password"  placeholder="Password" />
             <Checkbox mb="5" defaultChecked>
               I don't want to receive emails about Mailchimp and related Intuit
               product and feature updates, marketing best practices, and
@@ -80,7 +51,7 @@ function SignUp() {
               By creating an account, you agree to our Terms and have read and
               acknowledge the Global Privacy Statement.
             </Text>
-            <Button m="auto" my="4" w="80%" colorScheme="blue" onClick={HandleSubmit} >
+            <Button m="auto" my="4" w="80%" colorScheme="blue"  >
               Sign Up
             </Button>
             <Text fontSize={"sm"}>
