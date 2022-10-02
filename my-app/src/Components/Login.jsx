@@ -11,42 +11,10 @@ import {
   Button,
   Checkbox,
   Highlight,
-  useDisclosure
 } from "@chakra-ui/react";
-import axios from "axios";
-import React, { useContext, useState } from "react";
 import {  NavLink } from "react-router-dom";
-import { AuthContext } from "../Context/AuthContextProvider";
 
 function Login() {
-  const cancelRef = React.useRef()
-  const {setIsAuth} =useContext(AuthContext)
-  const [state, setState] = useState("");
-  const [data, setdata] = useState([]);
-  const [err,setErr]=useState(false)
-  const { isOpen, onOpen, onClose } = useDisclosure()
-  const handleChange = (e) => {
-    const { name, value } = e.target;
-    setState({ ...state, [name]: value });
-  };
-  function handlelogin(e) {
-    e.preventDefault();
-    axios
-      .get("http://localhost:3002/Users")
-      .then(function (response) {
-        setdata(response.data);
-        setIsAuth(true)
-      })
-      .catch(function (error) {
-        console.log(error);
-      })
-      .then(function () {});
-       data.map((i)=>(
-         (i.email!==state.email || i.pass!==state.pass)?setErr(true):setErr(false)
-       ))
-      }
-      console.log(err)
-
   return (
     <>
       <Flex>
@@ -71,23 +39,18 @@ function Login() {
               type="email"
               placeholder="Email"
               name="email"
-              value={state.email}
-              onChange={handleChange}
             />
             <FormLabel my="3">Password</FormLabel>
             <Input
               type="Password"
               placeholder="Password"
               name="pass"
-              value={state.pass}
-              onChange={handleChange}
             />
             <Button
               m="auto"
               mt="10"
               w="80%"
               colorScheme="blue"
-              onClick={handlelogin}
             >
               LogIn
             </Button>

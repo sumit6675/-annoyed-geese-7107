@@ -27,7 +27,7 @@ function HomeMid() {
       <Heading as="h1" size="2xl" my={20}>
         Find the right plan
       </Heading>
-      <Flex w={"90%"} m="auto">
+      <Flex  w={"90%"} m="auto">
         <Box
           w={"25%"}
           h="auto"

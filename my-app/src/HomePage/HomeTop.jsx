@@ -7,6 +7,7 @@ import {
   Image,
   Box,
   AspectRatio,
+  VStack,
 } from "@chakra-ui/react";
 import React from "react";
 import { NavLink } from "react-router-dom";
@@ -37,11 +38,11 @@ function HomeTop() {
       </Container>
 
       <Flex mt={12}>
-        <Box bg={"#dfdcd4"} w="25%" p={10}>
+        <VStack bg={"#dfdcd4"} w="25%" p={10}>
           <Heading m="auto" fontSize={"2xl"}>
             Convert With Automotion
           </Heading>
-        </Box>
+        </VStack>
         <Box bg={"#dbd9da"} w="25%" p={10}>
           <Heading m="auto" fontSize={"2xl"}>
             Optimize with AI & Analytics
