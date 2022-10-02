@@ -28,6 +28,7 @@ import {
 function MarketingPlatform() {
   return (
     <>
+    <Heading my="10">Marketing Platform</Heading>
                 <Flex w={"90%"} m="auto">
               <Box
                 w={"25%"}

@@ -8,6 +8,7 @@ import {
 } from "@chakra-ui/react";
 import MarketingPlatform from "../Pricinng Components/MarketingPlatform";
 import WebsitesAndCommerce from "../Pricinng Components/WebsitesAndCommerce";
+import TransactionalEmail from "../Pricinng Components/TransactionalEmail";
 function Pricing() {
   return (
     <>
@@ -25,7 +26,7 @@ function Pricing() {
            <WebsitesAndCommerce/>
           </TabPanel>
           <TabPanel>
-            <p>three!</p>
+            <TransactionalEmail/>
           </TabPanel>
         </TabPanels>
       </Tabs>
