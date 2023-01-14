@@ -31,27 +31,27 @@ Visit : https://funny-choux-1083f3.netlify.app/
 
 - ### Navbar
 
-<img src="https://freeimage.host/i/HYj2E7V" alt="homepage_image" />
+<a href="https://freeimage.host/"><img src="https://iili.io/HYj2E7V.png" alt="HYj2E7V.png" border="0" /></a>
 
 - ### User sign up Page
 
-<img src="https://freeimage.host/i/H7pHIXn" alt="homepage_image" />
+<a href="https://freeimage.host/"><img src="https://iili.io/H7pHIXn.png" alt="H7pHIXn.png" border="0" /></a>
 
 - ### User Log in Page
 
-<img src="https://freeimage.host/i/H7pHzzX" alt="homepage_image" />
+<a href="https://freeimage.host/"><img src="https://iili.io/H7pHzzX.png" alt="H7pHzzX.png" border="0" /></a>
 
 - ### Footer Page
 
-  <img src="https://freeimage.host/i/H7pHTss" alt="homepage_image" />
+  <a href="https://freeimage.host/"><img src="https://iili.io/H7pHTss.png" alt="H7pHTss.png" border="0" /></a>
 
 - ### Pricing page
 
-<img src="https://freeimage.host/i/HYjF7lj" alt="homepage_image" />
+<a href="https://freeimage.host/"><img src="https://iili.io/HYjF7lj.png" alt="HYjF7lj.png" border="0" /></a>
 
-<img src="https://freeimage.host/i/HYjFYUx" alt="homepage_image" />
+<a href="https://freeimage.host/"><img src="https://iili.io/HYjF5Kb.png" alt="HYjF5Kb.png" border="0" /></a>
 
-<img src="https://freeimage.host/i/HYjF5Kb" alt="homepage_image" />
+<a href="https://freeimage.host/"><img src="https://iili.io/HYjFYUx.png" alt="HYjFYUx.png" border="0" /></a>
 
 
   # Languages Used
