@@ -27,7 +27,7 @@ Visit : https://funny-choux-1083f3.netlify.app/
 
 - ### Homepage
 
-<img src="https://freeimage.host/i/H7pHobt" alt="homepage_image" />
+<a href="https://freeimage.host/"><img src="https://iili.io/H7pHobt.png" alt="H7pHobt.png" border="0" /></a>
 
 - ### Navbar
 
