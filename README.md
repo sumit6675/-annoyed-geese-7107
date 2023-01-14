@@ -1,5 +1,5 @@
 
-# Reliance Digital Clone
+# Mailchimp Clone
 
 <p>
 Mailchimp is primarily for getting leads into your email database and then sending them broadcast messages via email and social media. (“Broadcast” refers to sending a mass message to many people at the same time.) It also has some website and ecommerce functions. Let’s look at each area in a little more detail.
@@ -91,5 +91,5 @@ Visit : https://funny-choux-1083f3.netlify.app/
 
 ## Contributing
 
-We welcome contributions to the Reliance Digital Clone website. If you have an idea for a new feature or have found a bug, please open an issue in the repository.
+We welcome contributions to the Mailchimp Clone website. If you have an idea for a new feature or have found a bug, please open an issue in the repository.
 
