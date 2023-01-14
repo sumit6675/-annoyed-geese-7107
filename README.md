@@ -78,7 +78,6 @@ Visit : https://funny-choux-1083f3.netlify.app/
 - React JS
 - JavaScript
 - Chakra UI
-- Redux JS
 - Axios
 
 ## Other Tools and Libraries
